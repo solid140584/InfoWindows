@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InfoWindows</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Paradero">Paradero</string>
+    <string name="ContadorTest">01</string>
+    <string name="WayTest">México-Cuernavaca</string>
+    <string name="telTest">1234567890</string>
+</resources>

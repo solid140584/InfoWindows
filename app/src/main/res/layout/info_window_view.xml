@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <RelativeLayout
+     android:id="@+id/RelativeToolbar"
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:background="@color/gris_info">
+
+     <TextView
+         android:id="@+id/tvTitleParadero"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:text="@string/Paradero"
+         android:textSize="12sp"/>
+
+     <TextView
+         android:id="@+id/tvContador"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="10dp"
+         android:layout_centerVertical="true"
+         android:text="@string/ContadorTest"
+         android:textSize="12sp"/>
+ </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgWay"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/RelativeToolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_way"/>
+
+    <TextView
+        android:id="@+id/tvWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeToolbar"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imgWay"
+        android:layout_marginLeft="10dp"
+        android:text="@string/WayTest"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvDesviacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeToolbar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/WayTest"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/imgDesviacion"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/RelativeToolbar"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/tvDesviacion"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_desviacion"/>
+
+        <RelativeLayout
+            android:id="@+id/RelativeIcons"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/gris_info"
+            android:layout_below="@+id/imgDesviacion"
+            android:layout_marginTop="15dp">
+
+     <com.example.jromeromar.infowindows.Controls.ProhibitedImage
+         android:id="@+id/ctrGasolinera"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         app:iconoRef="@drawable/ic_gasolineria"/>
+
+        <com.example.jromeromar.infowindows.Controls.ProhibitedImage
+            android:id="@+id/ctrCarWash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            app:iconoRef="@drawable/ic_car_wash"
+            android:layout_toRightOf="@+id/ctrGasolinera" />
+
+        <com.example.jromeromar.infowindows.Controls.ProhibitedImage
+            android:id="@+id/ctrRestaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            app:iconoRef="@drawable/ic_restaurante"
+            android:layout_centerHorizontal="true"/>
+
+            <com.example.jromeromar.infowindows.Controls.ProhibitedImage
+                android:id="@+id/ctrHospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                app:iconoRef="@drawable/ic_hospital"
+                android:layout_toRightOf="@+id/ctrRestaurante"
+                android:layout_marginLeft="10dp"/>
+
+            <com.example.jromeromar.infowindows.Controls.ProhibitedImage
+                android:id="@+id/ctrWomen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                app:iconoRef="@drawable/ic_men_and_woman"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Relativewhite"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/RelativeIcons">
+
+        <ImageView
+            android:id="@+id/imgPlace"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_place"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/imgGps"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgPlace"
+            android:src="@mipmap/ic_gps"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgGps"
+            android:src="@mipmap/ic_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeFooter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gris_info"
+        android:layout_below="@+id/Relativewhite">
+
+
+        <ImageView
+            android:id="@+id/imgTel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_telefono"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tvTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgTel"
+            android:text="@string/telTest"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"/>
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

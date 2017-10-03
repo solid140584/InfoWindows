@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextBackground">
+        <attr name="icono" format="reference"/>
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <attr name="dateFormat" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProhibitedImage">
+        <attr name="iconoRef" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="itemAventones">
+        <attr name="origen" format="string"/>
+        <attr name="destino" format="string"/>
+        <attr name="empleado" format="string"/>
+        <attr name="numero" format="string"/>
+        <attr name="icon" format="reference"/>
+    </declare-styleable>
+
+</resources>
